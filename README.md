@@ -1,11 +1,11 @@
-# 📊 Gestión Administrativa & Marketing Analytics
+# 📊 Gestión Administrativa & Marketing Analytics & BI
 
 Este repositorio es la bitácora de mi transición hacia el **Business Intelligence**, donde integro la **Administración de Empresas**, la **Mercadotecnia Digital** y el análisis de datos con **SQL**. Mi objetivo es transformar datos crudos en decisiones estratégicas que glorifiquen a Dios a través de la excelencia y la fidelidad.
 
 ---
 
 ## 🎯 Visión de Vocación
-Convertirme en un administrador y consultor capaz de optimizar recursos y liderar proyectos de **Marketing Technologist**, sirviendo con integridad en la gestión de negocios familiares, instituciones diversas y administración de organizaciones.
+Convertirme en un administrador y consultor capaz de optimizar recursos y liderar proyectos diversos, sirviendo con integridad en la gestión de negocios familiares, instituciones diversas y administración de organizaciones.
 
 ---
 
