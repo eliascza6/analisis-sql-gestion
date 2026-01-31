@@ -1,0 +1,42 @@
+INTRODUCCIÓN
+
+/* PROYECTO: Auditoría de Niveles Salariales
+OBJETIVO: Extraer el segundo bloque de empleados con mayores ingresos (posiciones 3 a 5) para análisis de competitividad interna, excluyendo a la alta dirección.
+CONCEPTO TÉCNICO: Cláusulas elementales: ORDER BY, LIMIT, OFFSET y palabra clave: DESC 
+*/
+-- INSTRUCCIÓN: Arrastra & suelta para construir una consulta que selecciona las filas 3ras a 5tas de la tabla Empleados, ordenadas por la columna salario en orden descendente.
+
+SELECT * FROM Empleados
+ORDER BY salario DESC
+LIMIT 3 OFFSET 2
+
+
+FUNCIONES DE CADENA
+
+/* PROYECTO: Normalización de Catálogo de Biblioteca/Inventario
+OBJETIVO: Estandarizar la columna 'descripción' reemplazando puntuación informal 
+por formal para mejorar la calidad de los reportes impresos.
+CONCEPTO TÉCNICO: Manipulación de Strings (REPLACE) y Ordenamiento Cronológico.
+*/
+-- INSTRUCCIÓN: Arrastra y suelta para reemplazar todos los caracteres '!' con un punto '.' en la columna descripción de la tabla Libros. Ordena el resultado por la columna año.
+
+SELECT REPLACE (description, '!', '.')
+DE Libros
+ORDENAR POR año
+
+
+FUNCIONES DE MATEMÁTICAS & AGREGACIÓN
+
+/* PROYECTO: Identificación de Liderazgo de Mercado
+OBJETIVO: Extraer el perfil completo de la organización con el mayor volumen 
+de ingresos para realizar un análisis de benchmark y establecer objetivos de ventas.
+CONCEPTO TÉCNICO: Subconsultas (Subqueries) y Funciones de Agregación (MAX).
+*/
+-- INSTRUCCIÓN: Arrastra & suelta para seleccionar todas las columnas de la empresa con el número máximo de ingresos.
+
+SELECT * 
+FROM Companies
+WHERE revenue = (
+SELECT MAX
+(revenue)
+FROM Companies)
