@@ -1,0 +1,5 @@
+-- INSTRUCCIÓN: Completa la consulta para mostrar los sitios web con mayor número de visitas en la parte superior.
+
+SELECT *
+FROM web_traffic
+ORDER BY page_views DESC
