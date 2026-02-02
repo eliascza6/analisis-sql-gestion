@@ -40,3 +40,23 @@ WHERE revenue = (
 SELECT MAX
 (revenue)
 FROM Companies)
+
+
+CASO
+
+/* PROYECTO: Clasificación de Experiencia del Cliente
+OBJETIVO: Crear una dimensión cualitativa ('experience') basada en métricas 
+cuantitativas para facilitar la segmentación del catálogo y la toma de decisiones gerenciales.
+CONCEPTO TÉCNICO: Lógica condicional (CASE WHEN) y Alias de columna.
+*/
+-- INSTRUCCIÓN: Rellena los espacios en blanco para crear una columna personalizada llamada 'experience', que está definida por la columna de calificación.
+
+SELECT CASE
+    WHEN rating < 3 THEN 'Bad'
+    WHEN rating >= 3 AND rating < 8 THEN 'OK'
+    ELSE 'Great'
+END AS experience
+FROM Hotels;
+
+
+
