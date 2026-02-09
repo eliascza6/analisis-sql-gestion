@@ -59,4 +59,19 @@ END AS experience
 FROM Hotels;
 
 
+CUESTIONARIO DEL MÓDULO 1
 
+/* PROYECTO: Traducción de Códigos de Transmisión
+OBJETIVO: Convertir códigos numéricos de transmisión en texto legible para mejorar la comprensión de los datos en informes y análisis.
+CONCEPTO TÉCNICO: Lógica condicional (CASE) y Alias de columna.
+*/      
+
+-- Tienes una tabla Coches con una columna transmisión, que es numérica: 1 para Manual y 2 para Automática. 
+--Arrastra y suelta para crear una consulta que seleccione el valor de texto correspondiente de la columna transmisión.
+
+SELECT name,
+CASE
+    WHEN transmission = 1 THEN 'Manual'
+    ELSE 'Automático'
+END AS transmission
+FROM Cars
