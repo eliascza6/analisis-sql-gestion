@@ -18,7 +18,7 @@ La tabla Employees tiene una columna de identidad llamada id, que está config
 
 -- INSTRUCCIÓN:Añade los datos a la tabla, luego selecciona las columnas id, firstname, lastname y salary ordenadas por la columna id en orden descendente.
 
-COEMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /* 
 PROYECTO: Gestión de Capital Humano - Actualización de Nómina
