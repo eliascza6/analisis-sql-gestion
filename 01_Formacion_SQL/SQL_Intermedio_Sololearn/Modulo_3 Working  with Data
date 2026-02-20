@@ -83,7 +83,6 @@ OBJETIVO: Combinar datos de pedidos y productos para obtener información sobre 
 HERRAMIEENTAS: JOIN explícito (INNER JOIN) y Selección de columnas específicas
 */                 
 
-
 SELECT Orders.name, Orders.amount, Products.name
 FROM Orders
 JOIN Products ON Orders.prod_id = Products.id
