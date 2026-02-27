@@ -9,9 +9,10 @@ COMENTARIO DE "ANÁLIIS DE NEGOCIO"
 /*
 PROYECTO: Análisis de Viviendas - Renombrado de Columnas para Mejorar la Legibilidad
 OBJETIVO: Seleccionar todas las columnas de la tabla us_housing_units y renombrarlas con la primera letra en mayúscula para mejorar la presentación de los datos
-HERRAMIEENTAS: SELECT *, AS para renombrar columnas
+HERRAMIENTAS: SELECT *, AS para renombrar columnas
 */      
 
+```sql
 SELECT 
 year AS Year,
 month AS Month,
@@ -21,6 +22,7 @@ west AS West_Region,
 midwest AS Midwest_Region,
 northeast AS Northeast_Region
 FROM tutorial.us_housing_units;
+```
 
 
 LECCIÓN: LIMIT      
@@ -37,10 +39,11 @@ OBJETIVO: Restringir el conjunto de resultados a solo 15 filas para una revisió
 HERRAMIEENTAS: LIMIT
 */      
 
+```sql
 SELECT *
 FROM tutorial.us_housing_units      
 LIMIT 15;
-
+```
 
 LECCIÓN: WHERE
 
@@ -56,10 +59,11 @@ OBJETIVO: Seleccionar todas las columnas de la tabla us_housing_units donde el m
 HERRAMIEENTAS: WHERE
 */
 
+```sql
 SELECT *
   FROM tutorial.us_housing_units
  WHERE month = 1
-
+```
 
 LECCIÓN: COMPARISON OPERATORS ON NUMERICAL DATA
 
@@ -75,10 +79,11 @@ OBJETIVO: Determinar si la Región Oeste alguna vez produjo más de 50,000 unida
 HERRAMIEENTAS: WHERE con operadores de comparación
 */  
 
+```sql
 SELECT *
   FROM tutorial.us_housing_units
  WHERE west > 50;
-
+```
 
  LECCIÓN: COMPARISON OPERATORS ON NON-NUMERICAL DATA        
 
@@ -88,18 +93,21 @@ Write a query that only shows rows for which the month name is February.
 */
 
 COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+
 /*      
 PROYECTO: Análisis de Viviendas - Filtrado por Nombre del Mes para Enfocar el Análisis en Febrero
 OBJETIVO: Seleccionar solo las filas donde el nombre del mes sea febrero para analizar los datos específicos de ese mes
 HERRAMIEENTAS: WHERE con operadores de comparación para datos no numéricos
 */  
 
+```sql
 SELECT *
   FROM tutorial.us_housing_units
  WHERE month_name = 'February'
-
+```
 
 LECCIÓN: ARITHMETIC IN SQL
+
 /* 
 Practice Problem    
 Write a query that calculates the sum of all four regions in a separate column.
@@ -112,6 +120,7 @@ OBJETIVO: Calcular la suma de todas las unidades producidas en las cuatro region
 HERRAMIEENTAS: Operadores aritméticos en SQL
 */
 
+```sql
 SELECT year,
        month,
        west,
@@ -120,22 +129,26 @@ SELECT year,
        northeast,
        west + south + midwest +northeast AS usa_total
   FROM tutorial.us_housing_units
+```
 
 
 LECCIÓN: SHARPEN YOUR SKILLS
 #1
+
 /* 
 Practice Problem
 Write a query that returns all rows for which more units were produced in the West region than in the Midwest and Northeast combined.
 */  
 
 COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+
 /*      
 PROYECTO: Análisis de Viviendas - Comparación de Producción entre Regiones
 OBJETIVO: Seleccionar todas las filas donde se produjeron más unidades en la Región Oeste que en la combinación de las Regiones Midwest y Northeast para evaluar el rendimiento relativo de la Región Oeste
 HERRAMIEENTAS: WHERE con operadores de comparación y operadores aritméticos
 */  
 
+```sql
 SELECT year,
        month,
        west,
@@ -144,8 +157,10 @@ SELECT year,
        northeast
   FROM tutorial.us_housing_units
   WHERE west > (midwest + northeast);
+```
 
 #2
+
 /* 
 Practice Problem
 Write a query that calculates the percentage of all houses completed in the United States represented by each region. Only return results from the year 2000 and later.
@@ -153,12 +168,14 @@ Hint: There should be four columns of percentages.
 */  
 
 COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+
 /*
 PROYECTO: Análisis de Viviendas - Cálculo del Porcentaje de Unidades Producidas por Región
 OBJETIVO: Calcular el porcentaje de todas las unidades de vivienda completadas en los Estados Unidos representadas por cada región para evaluar la contribución de cada región a la producción total, filtrando solo los resultados a partir del año 2000
 HERRAMIEENTAS: Operadores aritméticos para calcular porcentajes y cláusula WHERE para filtrar por año
 */
 
+```sql
 SELECT year,
        month,
        west/(west + south + midwest + northeast)*100 AS west_pct,
@@ -167,4 +184,4 @@ SELECT year,
        northeast/(west + south + midwest + northeast)*100 AS northeast_pct
   FROM tutorial.us_housing_units
  WHERE year >= 2000;
- 
+ ```
