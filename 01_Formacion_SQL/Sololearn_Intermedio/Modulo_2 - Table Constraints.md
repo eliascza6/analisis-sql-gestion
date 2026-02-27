@@ -29,18 +29,21 @@ HERRAMIENTAS: INSERT INTO, ORDER BY DESC
 -- 1. Inserción masiva de nuevos empleados
 -- Nota: No incluimos la columna 'id' porque es AUTO_INCREMENT
 
+```sql
 INSERT INTO Employees (Firstname, Lastname, Salary)
 VALUES 
 ('Wang', 'Lee', 1900),
 ('Greta', 'Wu', 1200);
+```
 
 -- 2. Verificación de la carga de datos
 -- Nota: Ordenamos de forma descendente para ver los registros más recientes primero (Auditoría rápida)
 
+```sql
 SELECT id, firstname, lastname, salary 
 FROM Employees 
 ORDER BY id DESC;
-
+```
 
 LECCIÓN: CLAVES PRIMARIAS Y EXTRANJERAS
 
@@ -54,9 +57,10 @@ OBJETIVO: Vincular la tabla Houses con sus respectivos precios
 COMANDO: FOREIGN KEY
 */
 
+```sql
 FOREIGN KEY (number) 
 REFERENCES Prices(id);
-
+```
 
 LECCIÓN: ÚNICO
 
@@ -70,9 +74,10 @@ OBJETIVO: Evitar registros duplicados para una misma dirección
 COMANDO: UNIQUE
 */
 
+```sql
 ALTER TABLE Houses
 ADD UNIQUE (address);
-
+```
 
 EJERCICIO DEL CUESTIONARIO DEL MÓDULO 2
 
@@ -86,6 +91,7 @@ OBJETIVO: Establecer una relación entre usuarios y sus cuentas para mejorar la 
 COMANDOS: PRIMARY KEY, FOREIGN KEY, AUTO_INCREMENT
 */
 
+```sql
 CREATE TABLE Users (
 id int NOT NULL AUTO_INCREMENT,
 name varchar(255) NOT NULL,
@@ -94,3 +100,4 @@ PRIMARY KEY (id),
 FOREIGN KEY (account_id)
 REFERENCES Accounts(id)
 );
+```

@@ -2,6 +2,8 @@
 
 -- INSTRUCCIÓN: Extrae todos los títulos que contengan la palabra Avengers
 
+```sql
 SELECT *
 FROM comics
-WHERE title LIKE '%Avengers%'
+WHERE title LIKE '%Avengers%';
+```

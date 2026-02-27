@@ -12,15 +12,15 @@ NOT allows you to select rows that do not match a certain condition.
 The SQL LIKE operator
 
 /*
- Practice Problem
+Practice Problem
 Write a query that returns all rows for which Ludacris was a member of the group.
 */
 
-COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+COMENTARIO DE ANÁLISIS DE NEGOCIO
+
 /*
-PROYECTO: MOSTRAR TODAS LAS 
-OBJETIVO:
-HERRAMIENTAS:
+PROYECTO: 
+
 */
 
 SELECT *

@@ -5,5 +5,7 @@ Los comentarios no son instrucciones, son ignorados por las computadoras. */
 
 -- extracts 2 product fields
 
+```sql
 SELECT name, price
-FROM products
+FROM products;
+```

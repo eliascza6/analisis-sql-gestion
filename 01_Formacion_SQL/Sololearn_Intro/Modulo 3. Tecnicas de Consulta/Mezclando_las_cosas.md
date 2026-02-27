@@ -2,5 +2,7 @@
 
 -- INSTRUCCIÓN: Completa la consulta utilizando la función de agregación
 
+```sql
 SELECT AVG(price)
 FROM sales;
+```

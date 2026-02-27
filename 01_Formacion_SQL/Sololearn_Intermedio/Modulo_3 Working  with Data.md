@@ -13,10 +13,11 @@ OBJETIVO: Combinar datos de productos y pedidos para obtener información sobre 
 HERRAMIEENTAS: JOIN implícito (WHERE) y Selección de columnas específicas
 */
 
+```sql
 SELECT name, price
 FROM Products, Orders
 WHERE Products.id = Orders.product_id
-
+```
 
 LECCIÓN: JOINS
 
@@ -30,28 +31,32 @@ OBJETIVO: Combinar datos de usuarios y transacciones para obtener información s
 HERRAMIEENTAS: JOIN explícito (INNER JOIN) y Alias de tabla
 */
 
+```sql
 SELECT U.name, T.amount
 FROM Users AS U
 JOIN Transactions AS T
 ON U.id = T.userid
-
+```
 
 LECCIÓN: UNIÓN
 
 -- INSTRUCCIÓN:Arrastra y suelta para combinar las filas de Usuarios y Clientes, pero solo para aquellos que tienen un saldo mayor a 1000.
 
 COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+
 /*
 PROYECTO: Análisis de Clientes - Combinación de Usuarios y Clientes con Saldo Alto
 OBJETIVO: Unificar datos de usuarios y clientes para identificar aquellos con un saldo significativo      
 HERRAMIEENTAS: UNION y Condición de filtrado (WHERE)
 */
 
+```sql
 SELECT * FROM Users
 WHERE balance > 1000
 UNION
 SELECT * FROM Clients
 WHERE balance > 1000
+```
 
 LECCIÓN: ENCUENTRA EL PROMEDIO
 
@@ -64,25 +69,31 @@ OBJETIVO: Combinar datos de productos y categorías para obtener información so
 HERRAMIEENTAS: LEFT JOIN y Alias de tabla
 */  
 
+```sql
 SELECT P.name, PC.category
 FROM Products AS P
 LEFT JOIN ProductCategories AS PC
 ON P.id = PC.product_id
+```
 
 
 EXAMEN DEL MÓDULO 3
 
 /* La clave foránea prod_id de la tabla Orders se refiere a la columna id de la tabla Products.
 */
+
 -- INSTRUCCIÓN: Arrastra y suelta para crear una consulta que selecciona las columnas de nombre y cantidad de los Orders con los nombres de Product correspondientes.
 
 COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+
 /*
 PROYECTO: Análisis de Pedidos - Relación de Pedidos y Productos
 OBJETIVO: Combinar datos de pedidos y productos para obtener información sobre las ventas y la popularidad de los productos 
 HERRAMIEENTAS: JOIN explícito (INNER JOIN) y Selección de columnas específicas
 */                 
 
+```sql
 SELECT Orders.name, Orders.amount, Products.name
 FROM Orders
-JOIN Products ON Orders.prod_id = Products.id
+JOIN Products ON Orders.prod_id = Products.id;
+```
