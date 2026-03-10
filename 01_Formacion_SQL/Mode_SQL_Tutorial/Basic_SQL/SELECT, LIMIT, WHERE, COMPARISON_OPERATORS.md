@@ -5,7 +5,8 @@ Practice Problem
 Write a query to select all of the columns in tutorial.us_housing_units and rename them so that their first letters are capitalized.
 */ 
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"      
+COMENTARIO DE "ANÁLISIS DE NEGOCIO" 
+
 /*
 PROYECTO: Análisis de Viviendas - Renombrado de Columnas para Mejorar la Legibilidad
 OBJETIVO: Seleccionar todas las columnas de la tabla us_housing_units y renombrarlas con la primera letra en mayúscula para mejorar la presentación de los datos
@@ -32,11 +33,12 @@ Practice Problem
 Write a query that uses the LIMIT command to restrict the result set to only 15 rows.
 */
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /*      
 PROYECTO: Análisis de Viviendas - Limitación de Resultados para una Revisión Rápida
 OBJETIVO: Restringir el conjunto de resultados a solo 15 filas para una revisión rápida de los datos
-HERRAMIEENTAS: LIMIT
+HERRAMIENTAS: LIMIT
 */      
 
 ```sql
@@ -52,11 +54,12 @@ Practice Problem
 Write a query to select all of the columns in tutorial.us_housing_units where the month is equal to 1.
 */  
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /*  
 PROYECTO: Análisis de Viviendas - Filtrado por Mes para Enfocar el Análisis
 OBJETIVO: Seleccionar todas las columnas de la tabla us_housing_units donde el mes sea igual a 1 para analizar los datos específicos de ese mes
-HERRAMIEENTAS: WHERE
+HERRAMIENTAS: WHERE
 */
 
 ```sql
@@ -72,11 +75,12 @@ Practice Problem
 Did the West Region ever produce more than 50,000 housing units in one month? Write a query to find out.
 */  
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /*      
 PROYECTO: Análisis de Viviendas - Evaluación de la Producción en la Región Oeste
 OBJETIVO: Determinar si la Región Oeste alguna vez produjo más de 50,000 unidades de vivienda en un mes para evaluar el rendimiento de esa región
-HERRAMIEENTAS: WHERE con operadores de comparación
+HERRAMIENTAS: WHERE con operadores de comparación
 */  
 
 ```sql
@@ -85,19 +89,19 @@ SELECT *
  WHERE west > 50;
 ```
 
- LECCIÓN: COMPARISON OPERATORS ON NON-NUMERICAL DATA        
+LECCIÓN: COMPARISON OPERATORS ON NON-NUMERICAL DATA        
 
 /* 
 Practice Problem    
 Write a query that only shows rows for which the month name is February.
 */
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /*      
 PROYECTO: Análisis de Viviendas - Filtrado por Nombre del Mes para Enfocar el Análisis en Febrero
 OBJETIVO: Seleccionar solo las filas donde el nombre del mes sea febrero para analizar los datos específicos de ese mes
-HERRAMIEENTAS: WHERE con operadores de comparación para datos no numéricos
+HERRAMIENTAS: WHERE con operadores de comparación para datos no numéricos
 */  
 
 ```sql
@@ -113,11 +117,12 @@ Practice Problem
 Write a query that calculates the sum of all four regions in a separate column.
 */
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /*      
 PROYECTO: Análisis de Viviendas - Cálculo del Total de Unidades Producidas por Región
 OBJETIVO: Calcular la suma de todas las unidades producidas en las cuatro regiones y mostrarlo en una columna separada para obtener una visión general del total de producción
-HERRAMIEENTAS: Operadores aritméticos en SQL
+HERRAMIENTAS: Operadores aritméticos en SQL
 */
 
 ```sql
@@ -140,12 +145,12 @@ Practice Problem
 Write a query that returns all rows for which more units were produced in the West region than in the Midwest and Northeast combined.
 */  
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /*      
 PROYECTO: Análisis de Viviendas - Comparación de Producción entre Regiones
 OBJETIVO: Seleccionar todas las filas donde se produjeron más unidades en la Región Oeste que en la combinación de las Regiones Midwest y Northeast para evaluar el rendimiento relativo de la Región Oeste
-HERRAMIEENTAS: WHERE con operadores de comparación y operadores aritméticos
+HERRAMIENTAS: WHERE con operadores de comparación y operadores aritméticos
 */  
 
 ```sql
@@ -167,12 +172,12 @@ Write a query that calculates the percentage of all houses completed in the Unit
 Hint: There should be four columns of percentages.
 */  
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /*
 PROYECTO: Análisis de Viviendas - Cálculo del Porcentaje de Unidades Producidas por Región
 OBJETIVO: Calcular el porcentaje de todas las unidades de vivienda completadas en los Estados Unidos representadas por cada región para evaluar la contribución de cada región a la producción total, filtrando solo los resultados a partir del año 2000
-HERRAMIEENTAS: Operadores aritméticos para calcular porcentajes y cláusula WHERE para filtrar por año
+HERRAMIENTAS: Operadores aritméticos para calcular porcentajes y cláusula WHERE para filtrar por año
 */
 
 ```sql

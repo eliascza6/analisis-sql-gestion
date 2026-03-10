@@ -1,5 +1,7 @@
 -- INTRODUCCIÓN
 
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /* 
 PROYECTO: Auditoría de Niveles Salariales
 OBJETIVO: Extraer el segundo bloque de empleados con mayores ingresos (posiciones 3 a 5) para análisis de competitividad interna, excluyendo a la alta dirección.
@@ -19,6 +21,8 @@ LIMIT 3 OFFSET 2;
 
 FUNCIONES DE CADENA
 
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /* 
 PROYECTO: Normalización de Catálogo de Biblioteca/Inventario
 OBJETIVO: Estandarizar la columna 'descripción' reemplazando puntuación informal por formal para mejorar la calidad de los reportes impresos.
@@ -36,6 +40,8 @@ ORDER BY year;
 ```
 
 FUNCIONES DE MATEMÁTICAS & AGREGACIÓN
+
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /* 
 PROYECTO: Identificación de Liderazgo de Mercado
@@ -57,6 +63,8 @@ FROM Companies)
 
 CASO
 
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
+
 /* 
 PROYECTO: Clasificación de Experiencia del Cliente
 OBJETIVO: Crear una dimensión cualitativa ('experience') basada en métricas 
@@ -76,6 +84,8 @@ FROM Hotels;
 ```
 
 CUESTIONARIO DEL MÓDULO 1
+
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /* PROYECTO: Traducción de Códigos de Transmisión
 OBJETIVO: Convertir códigos numéricos de transmisión en texto legible para mejorar la comprensión de los datos en informes y análisis.

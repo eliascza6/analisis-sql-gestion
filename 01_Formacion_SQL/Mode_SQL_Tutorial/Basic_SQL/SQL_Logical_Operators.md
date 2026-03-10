@@ -85,12 +85,14 @@ SELECT *
 ```
 
 The SQL BETWEEN operator
+
 /*
 Practice Problem
 Write a query that shows all top 100 songs from January 1, 1985 through December 31, 1990.
 */
 
 Comentario de "ANÁLISIS DE NEGOCIO"
+
 /*
 PROYECTO: Consulta de canciones top 100 entre 1985 y 1990
 OBJETIVO: Obtener todas las filas de la tabla que correspondan a canciones que estuvieron en el top 100 entre el 1 de enero de 1985 y el 31 de diciembre de 1990.
@@ -213,6 +215,7 @@ Write a query that returns all songs with titles that contain the word "Californ
 */
 
 Comentario de "ANÁLISIS DE NEGOCIO"
+
 /*
 PROYECTO: Consulta de canciones con "California" en el título en los años 1970s o 1990s
 

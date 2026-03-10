@@ -49,7 +49,7 @@ LECCIÓN: CLAVES PRIMARIAS Y EXTRANJERAS
 
 -- INSTRUCCIÓN: Rellena los espacios en blanco para crear una clave extranjera en la columna 'number' de la tabla Houses, haciendo referencia a la columna 'id' de la tabla 'Prices'.
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /*
 PROYECTO: Relación de Activos Inmobiliarios
@@ -66,7 +66,7 @@ LECCIÓN: ÚNICO
 
 -- INSTRUCCIÓN: Arrastra y suelta para hacer única la columna 'address'.
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /*
 PROYECTO: Registro de Ubicaciones de Inmuebles
@@ -83,7 +83,7 @@ EJERCICIO DEL CUESTIONARIO DEL MÓDULO 2
 
 -- INSTRUCCIÓN: Arrastra & suelta para crear una tabla 'Users' con una clave primaria en la columna id y una columna de clave externa 'account_id', que hace referencia a la columna id de la tabla Accounts.
 
-COMENTARIO DE "ANÁLIIS DE NEGOCIO"
+COMENTARIO DE "ANÁLISIS DE NEGOCIO"
 
 /*
 PROYECTO: Gestión de Usuarios y Cuentas
